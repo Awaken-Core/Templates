@@ -128,3 +128,103 @@
     @apply font-sans;
   }
 }
+
+@font-face {
+  font-family: 'CandleSuit';
+  src: url('/fonts/CandleSuitDemoRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ApparelDisplay';
+  src: url('/fonts/ApparelDisplayRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SatoshiMedium';
+  src: url('/fonts/SatoshiMedium.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BubbleDot';
+  src: url('/fonts/Bubbledot.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/fonts/Helvetica.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITCGaramond';
+  src: url('/fonts/ITCGaramondStdLtNarrowIta.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oddlini';
+  src: url('/fonts/OddliniRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RegionalCondensed';
+  src: url('/fonts/RegionalCondensed.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TimesNewRoman';
+  src: url('/fonts/TimesNewRoman.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+.font-bubbledot {
+  font-family: 'BubbleDot';
+}
+
+.font-helvetica {
+  font-family: 'Helvetica';
+}
+
+.font-candle {
+  font-family: 'CandleSuit';
+}
+
+.font-apparel {
+  font-family: 'ApparelDisplay';
+}
+
+.font-satoshi {
+  font-family: 'SatoshiMedium';
+}
+
+.font-itcgaramond {
+  font-family: 'ITCGaramond';
+}
+
+.font-oddlini {
+  font-family: 'Oddlini';
+}
+
+.font-regionalcondensed {
+  font-family: 'RegionalCondensed';
+}
+
+.font-timenewroman {
+  font-family: 'TimesNewRoman';
+}
