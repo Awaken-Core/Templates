@@ -2,7 +2,6 @@
 
 import * as React from "react"
 
-import { NavDocuments } from "@/components/modules/dashboard/nav-documents"
 import { NavMain } from "@/components/modules/dashboard/nav-main"
 import { NavSecondary } from "@/components/modules/dashboard/nav-secondary"
 import {
@@ -15,99 +14,66 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import { HugeiconsIcon } from "@hugeicons/react"
-import { DashboardSquare01Icon, Menu01Icon, ChartHistogramIcon, Folder01Icon, UserGroupIcon, Camera01Icon, File01Icon, Settings05Icon, HelpCircleIcon, SearchIcon, Database01Icon, Analytics01Icon, CommandIcon } from "@hugeicons/core-free-icons"
+import { DashboardSquare01Icon, Menu01Icon, ChartHistogramIcon, Folder01Icon, UserGroupIcon, Camera01Icon, File01Icon, Settings05Icon, HelpCircleIcon, SearchIcon, CommandIcon } from "@hugeicons/core-free-icons"
 import Link from "next/link"
 
 const data = {
   navMain: [
     {
-      title: "Dashboard",
-      url: "#",
+      title: "Navbar",
+      url: "/navbar",
       icon: (
         <HugeiconsIcon icon={DashboardSquare01Icon} strokeWidth={2} />
       ),
     },
     {
-      title: "Lifecycle",
-      url: "#",
+      title: "Landing",
+      url: "/landing",
+      icon: (
+        <HugeiconsIcon icon={DashboardSquare01Icon} strokeWidth={2} />
+      ),
+    },
+    {
+      title: "About",
+      url: "/about",
       icon: (
         <HugeiconsIcon icon={Menu01Icon} strokeWidth={2} />
       ),
     },
     {
-      title: "Analytics",
-      url: "#",
+      title: "Demo",
+      url: "/demo",
       icon: (
         <HugeiconsIcon icon={ChartHistogramIcon} strokeWidth={2} />
       ),
     },
     {
-      title: "Projects",
-      url: "#",
+      title: "Service",
+      url: "/service",
       icon: (
         <HugeiconsIcon icon={Folder01Icon} strokeWidth={2} />
       ),
     },
     {
-      title: "Team",
-      url: "#",
+      title: "Company",
+      url: "/company",
       icon: (
         <HugeiconsIcon icon={UserGroupIcon} strokeWidth={2} />
       ),
     },
-  ],
-  navClouds: [
     {
-      title: "Capture",
+      title: "Testimonial",
+      url: "/testimonial",
       icon: (
-        <HugeiconsIcon icon={Camera01Icon} strokeWidth={2} />
+        <HugeiconsIcon icon={UserGroupIcon} strokeWidth={2} />
       ),
-      isActive: true,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
     },
     {
-      title: "Proposal",
+      title: "Footer",
+      url: "/footer",
       icon: (
-        <HugeiconsIcon icon={File01Icon} strokeWidth={2} />
+        <HugeiconsIcon icon={UserGroupIcon} strokeWidth={2} />
       ),
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Prompts",
-      icon: (
-        <HugeiconsIcon icon={File01Icon} strokeWidth={2} />
-      ),
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
     },
   ],
   navSecondary: [
@@ -130,29 +96,6 @@ const data = {
       url: "#",
       icon: (
         <HugeiconsIcon icon={SearchIcon} strokeWidth={2} />
-      ),
-    },
-  ],
-  documents: [
-    {
-      name: "Data Library",
-      url: "#",
-      icon: (
-        <HugeiconsIcon icon={Database01Icon} strokeWidth={2} />
-      ),
-    },
-    {
-      name: "Reports",
-      url: "#",
-      icon: (
-        <HugeiconsIcon icon={Analytics01Icon} strokeWidth={2} />
-      ),
-    },
-    {
-      name: "Word Assistant",
-      url: "#",
-      icon: (
-        <HugeiconsIcon icon={File01Icon} strokeWidth={2} />
       ),
     },
   ],
@@ -179,7 +122,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavDocuments items={data.documents} />
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>

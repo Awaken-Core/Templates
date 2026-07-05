@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/sidebar"
 import { HugeiconsIcon } from "@hugeicons/react"
 import { PlusSignCircleIcon, Mail01Icon } from "@hugeicons/core-free-icons"
+import { useRouter } from "next/navigation"
 
 export function NavMain({
   items,
@@ -20,6 +21,7 @@ export function NavMain({
     icon?: React.ReactNode
   }[]
 }) {
+  const router = useRouter();
   return (
     <SidebarGroup>
       <SidebarGroupContent className="flex flex-col gap-2">
@@ -44,7 +46,7 @@ export function NavMain({
         </SidebarMenu>
         <SidebarMenu>
           {items.map((item) => (
-            <SidebarMenuItem key={item.title}>
+            <SidebarMenuItem key={item.title} onClick={() => router.push(`/dashboard/${item.url}`)}>
               <SidebarMenuButton tooltip={item.title}>
                 {item.icon}
                 <span>{item.title}</span>
