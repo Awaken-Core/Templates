@@ -7,7 +7,7 @@ app
 - /dashboard/demo -> Demo Screen
 - /dashboard/about -> About Screen
 - /dashboard/service -> Service Screen
-- /dashboard/companies -> Company Screen
+- /dashboard/company -> Company Screen
 - /dashboard/testimonial -> Testimonial Screens
 - /dashboard/footer -> Footer Screens
 
