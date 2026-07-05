@@ -170,6 +170,9 @@ export default function LineWaves({
     const renderer = new Renderer({ alpha: true, premultipliedAlpha: false });
     const gl = renderer.gl;
     gl.clearColor(0, 0, 0, 0);
+    gl.canvas.style.width = '100%';
+    gl.canvas.style.height = '100%';
+    gl.canvas.style.display = 'block';
 
     let program: Program;
     let currentMouse = [0.5, 0.5];
@@ -194,6 +197,9 @@ export default function LineWaves({
       }
     }
     window.addEventListener('resize', resize);
+
+    const resizeObserver = new ResizeObserver(resize);
+    resizeObserver.observe(container);
 
     resize();
 
@@ -252,6 +258,7 @@ export default function LineWaves({
 
     return () => {
       cancelAnimationFrame(animationFrameId);
+      resizeObserver.disconnect();
       window.removeEventListener('resize', resize);
       if (enableMouseInteraction) {
         gl.canvas.removeEventListener('mousemove', handleMouseMove);
