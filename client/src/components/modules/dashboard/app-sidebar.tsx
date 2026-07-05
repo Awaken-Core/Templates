@@ -20,15 +20,15 @@ import Link from "next/link"
 const data = {
   navMain: [
     {
-      title: "Navbar",
-      url: "/navbar",
+      title: "Landing",
+      url: "/landing",
       icon: (
         <HugeiconsIcon icon={DashboardSquare01Icon} strokeWidth={2} />
       ),
     },
     {
-      title: "Landing",
-      url: "/landing",
+      title: "Authentication",
+      url: "/authentication",
       icon: (
         <HugeiconsIcon icon={DashboardSquare01Icon} strokeWidth={2} />
       ),
