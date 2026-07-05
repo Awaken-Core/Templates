@@ -15,10 +15,10 @@ export function LoginForm({
   ...props
 }: React.ComponentProps<"div">) {
   return (
-    <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <Card className="overflow-hidden p-0 rounded-2xl">
-        <CardContent className="grid p-0 md:grid-cols-2">
-          <form className="p-6 md:p-8">
+    <div className={cn("flex w-full flex-col gap-6", className)} {...props}>
+      <Card className="w-full overflow-hidden rounded-2xl p-0">
+        <CardContent className="grid w-full p-0 md:grid-cols-2">
+          <form className="min-w-0 p-6 md:p-8">
             <FieldGroup>
               <div className="flex flex-col items-center gap-2 text-center">
                 <h1 className="text-2xl font-bold tracking-tight">Welcome back</h1>
@@ -87,7 +87,7 @@ export function LoginForm({
               </FieldDescription>
             </FieldGroup>
           </form>
-          <div className="relative hidden bg-muted md:block">
+          <div className="relative hidden min-h-[320px] bg-muted md:block">
             <img
               src="/images/auth02.png"
               alt="Image"
