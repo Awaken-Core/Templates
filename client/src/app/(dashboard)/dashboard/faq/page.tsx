@@ -1,10 +1,10 @@
-import { landingRegister } from '@/registry';
+import { faqRegister } from '@/registry';
 import React from 'react'
 
-const Landing = () => {
+const Faq = () => {
   return (
     <div className='flex w-full flex-col items-center justify-center gap-4'>
-      {landingRegister.map((Component, key) => (
+      {faqRegister.map((Component, key) => (
         <div key={key} className='w-full'>
           <Component />
         </div>
@@ -13,4 +13,4 @@ const Landing = () => {
   )
 }
 
-export default Landing;
+export default Faq;

@@ -1,4 +1,4 @@
-import { authRegsiter } from '@/registry/authentication/register/auth-register';
+import { authRegsiter } from '@/registry/authentication';
 
 const Authentication = () => {
   return (
