@@ -1,10 +1,11 @@
 "use client";
 
 import {
-  animate,
   motion,
-  useMotionValue,
-} from "framer-motion";
+  animate,
+  useMotionValue
+} from "motion/react";
+
 import {
   type ComponentPropsWithoutRef,
   useId,
@@ -30,7 +31,7 @@ export function LiquidBlurSweepButton({
   backgroundColor = "#111827",
   textColor = "#ffffff",
   borderRadius = 14,
-  blurIntensity = 3,
+  blurIntensity = 10,
   className,
   style,
   onMouseEnter,
@@ -54,7 +55,7 @@ export function LiquidBlurSweepButton({
     if (buttonBounds && labelBounds) {
       const labelStart = labelBounds.left - buttonBounds.left;
       const labelEnd = labelStart + labelBounds.width;
-      const nextWaveWidth = Math.max(buttonBounds.width * 0.26, 52);
+      const nextWaveWidth = Math.max(buttonBounds.width * 0.26, 100);
       const enteredFromLeft = event.clientX <= buttonBounds.left + buttonBounds.width / 2;
       const origin = enteredFromLeft ? labelStart - nextWaveWidth : labelEnd;
       const destination = enteredFromLeft ? labelEnd : labelStart - nextWaveWidth;
@@ -64,7 +65,7 @@ export function LiquidBlurSweepButton({
       sweepX.set(origin);
       animate(sweepX, destination, {
         type: "spring",
-        stiffness: 280,
+        stiffness: 120,
         damping: 28,
         mass: 0.6,
         visualDuration: 0.62,
@@ -153,9 +154,7 @@ export function LiquidBlurSweepButton({
 }
 
 const Button01 = () => (
-  <section className="flex min-h-72 w-full items-center justify-center rounded-2xl border bg-background p-8">
-    <LiquidBlurSweepButton text="Experience the sweep" />
-  </section>
+  <LiquidBlurSweepButton text="Experience the sweep" />
 );
 
 export default Button01;

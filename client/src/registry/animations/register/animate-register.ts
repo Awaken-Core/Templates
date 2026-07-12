@@ -1,6 +1,5 @@
-import Button01 from "../screen/button-01"
-
+import ButtonScreen from "../screen/button/button-screen";
 
 export const animationsRegister: React.ComponentType[] = [
-    Button01
+    ButtonScreen
 ]
