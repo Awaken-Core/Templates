@@ -14,7 +14,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import { HugeiconsIcon } from "@hugeicons/react"
-import { DashboardSquare01Icon, Menu01Icon, ChartHistogramIcon, Folder01Icon, UserGroupIcon, Camera01Icon, File01Icon, Settings05Icon, HelpCircleIcon, SearchIcon, CommandIcon } from "@hugeicons/core-free-icons"
+import { Settings05Icon, HelpCircleIcon, SearchIcon, CommandIcon, CircleQuestionMarkIcon, PowerServiceIcon, WorkIcon, UserIcon, ArtboardToolIcon, Cards02Icon, Building02Icon, ContactIcon, DocumentValidationIcon } from "@hugeicons/core-free-icons"
 import Link from "next/link"
 
 const data = {
@@ -23,56 +23,63 @@ const data = {
       title: "Landing",
       url: "/landing",
       icon: (
-        <HugeiconsIcon icon={DashboardSquare01Icon} strokeWidth={2} />
+        <HugeiconsIcon icon={ArtboardToolIcon} strokeWidth={2} />
       ),
     },
     {
       title: "Authentication",
       url: "/authentication",
       icon: (
-        <HugeiconsIcon icon={DashboardSquare01Icon} strokeWidth={2} />
+        <HugeiconsIcon icon={DocumentValidationIcon} strokeWidth={2} />
       ),
     },
     {
       title: "About",
       url: "/about",
       icon: (
-        <HugeiconsIcon icon={Menu01Icon} strokeWidth={2} />
+        <HugeiconsIcon icon={UserIcon} strokeWidth={2} />
       ),
     },
     {
       title: "Demo",
       url: "/demo",
       icon: (
-        <HugeiconsIcon icon={ChartHistogramIcon} strokeWidth={2} />
+        <HugeiconsIcon icon={WorkIcon} strokeWidth={2} />
       ),
     },
     {
       title: "Service",
       url: "/service",
       icon: (
-        <HugeiconsIcon icon={Folder01Icon} strokeWidth={2} />
+        <HugeiconsIcon icon={PowerServiceIcon} strokeWidth={2} />
       ),
+    },
+    {
+      title: "Faq",
+      url: "/faq",
+      icon: (
+        <HugeiconsIcon icon={CircleQuestionMarkIcon} strokeWidth={2} />
+      )
     },
     {
       title: "Company",
       url: "/company",
       icon: (
-        <HugeiconsIcon icon={UserGroupIcon} strokeWidth={2} />
+        <HugeiconsIcon icon={Building02Icon} strokeWidth={2} />
       ),
     },
     {
       title: "Testimonial",
       url: "/testimonial",
       icon: (
-        <HugeiconsIcon icon={UserGroupIcon} strokeWidth={2} />
+        <HugeiconsIcon icon={Cards02Icon} strokeWidth={2} />
       ),
     },
     {
       title: "Footer",
       url: "/footer",
       icon: (
-        <HugeiconsIcon icon={UserGroupIcon} strokeWidth={2} />
+        <HugeiconsIcon icon={ContactIcon} strokeWidth={2} />
       ),
     },
         {
@@ -121,7 +128,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             >
               <Link href="/">
                 <HugeiconsIcon icon={CommandIcon} strokeWidth={2} className="size-5!" />
-                <span className="text-base font-semibold">Awaken Templates</span>
+                <span className="text-base font-semibold tracking-[-0.3px]">Awaken Templates</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>

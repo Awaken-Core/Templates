@@ -1,0 +1,1 @@
+export const servicesRegister: React.ComponentType[] = [];
