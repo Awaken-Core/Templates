@@ -21,8 +21,9 @@ export function LoginForm({
           </p>
         </div>
 
-        <Field>
-          <Button variant="outline" type="button" className="w-full flex items-center justify-center gap-3 rounded-xl h-11 font-medium text-[13px]">
+        <div className="flex flex-col items-center justify-center gap-2">
+          <Field>
+          <Button variant="outline" type="button" className="w-full flex items-center justify-center gap-3 rounded-3xl h-11 font-medium text-[13px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
               <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
               <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -34,7 +35,7 @@ export function LoginForm({
         </Field>
 
         <Field>
-          <Button variant="outline" type="button" className="w-full flex items-center justify-center gap-3 rounded-xl h-11 font-medium text-[13px]">
+          <Button variant="outline" type="button" className="w-full flex items-center justify-center gap-3 rounded-3xl h-11 font-medium text-[13px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
               <path d="M2.38 6.945L9.67 9.87l.01 4.54-7.3-2.925z" fill="#0072C6"/>
               <path d="M9.68 9.87l11.94-4.83v9.84l-11.94 4.83z" fill="#0072C6"/>
@@ -46,23 +47,24 @@ export function LoginForm({
         </Field>
 
         <Field>
-          <Button variant="outline" type="button" className="w-full flex items-center justify-center gap-3 rounded-xl h-11 font-medium text-[13px]">
+          <Button variant="outline" type="button" className="w-full flex items-center justify-center gap-3 rounded-3xl h-11 font-medium text-[13px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
               <path d="M17.05 13.92c-.03-2.9 2.37-4.32 2.48-4.39-1.35-1.97-3.44-2.24-4.18-2.28-1.77-.18-3.45 1.05-4.36 1.05-.91 0-2.31-1.02-3.8-1-1.95.03-3.75 1.14-4.75 2.88-2.03 3.52-.52 8.7 1.45 11.55.97 1.4 2.1 2.96 3.63 2.9 1.47-.05 2.04-.94 3.82-.94 1.77 0 2.29.94 3.83.91 1.58-.03 2.56-1.42 3.52-2.82 1.1-1.6 1.56-3.15 1.58-3.23-.03-.02-2.88-1.1-2.92-4.07zM14.65 6.2c.8-1.01 1.34-2.4 1.2-3.8-1.2.05-2.65.8-3.47 1.81-.66.8-.131 2.25.131 3.65 1.35.1 2.62-.65 3.44-1.66z" fill="currentColor" />
             </svg>
             Log in with Apple
           </Button>
         </Field>
+        </div>
 
         <FieldSeparator className="text-muted-foreground font-medium my-0">Or</FieldSeparator>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2">
             <Field>
-                <Input id="email" type="email" placeholder="E-mail" required className="h-11 rounded-xl px-4 text-[13px]" />
+                <Input id="email" type="email" placeholder="E-mail" required className="h-11 rounded-3xl px-4 text-[13px]" />
             </Field>
             
             <Field>
-                <Input id="password" type="password" placeholder="Password" required className="h-11 rounded-xl px-4 text-[13px]" />
+                <Input id="password" type="password" placeholder="Password" required className="h-11 rounded-3xl px-4 text-[13px]" />
             </Field>
         </div>
 
