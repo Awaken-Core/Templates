@@ -5,15 +5,22 @@ import { ThemeProvider } from "./theme-provider";
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
     return (
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="light"
-            enableSystem
-            disableTransitionOnChange
-        >
-            {children}
-            <Toaster position="bottom-right" />
-        </ThemeProvider>
+
+        <>
+        
+         {children}
+            <Toaster richColors position="top-right" />
+        </>
+
+
+        // <ThemeProvider
+        //     attribute="class"
+        //     defaultTheme="light"
+        //     enableSystem
+        //     disableTransitionOnChange
+        // >
+           
+        // </ThemeProvider>
     );
 };
 

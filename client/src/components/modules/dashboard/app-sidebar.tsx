@@ -75,6 +75,13 @@ const data = {
         <HugeiconsIcon icon={UserGroupIcon} strokeWidth={2} />
       ),
     },
+        {
+      title: "Animations",
+        url: "/animations",
+      icon: (
+        <HugeiconsIcon icon={UserGroupIcon} strokeWidth={2} />
+      ),
+    },
   ],
   navSecondary: [
     {
