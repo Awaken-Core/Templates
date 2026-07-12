@@ -14,7 +14,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import { HugeiconsIcon } from "@hugeicons/react"
-import { Settings05Icon, HelpCircleIcon, SearchIcon, CommandIcon, CircleQuestionMarkIcon, PowerServiceIcon, WorkIcon, UserIcon, ArtboardToolIcon, Cards02Icon, Building02Icon, ContactIcon, DocumentValidationIcon } from "@hugeicons/core-free-icons"
+import { Settings05Icon, HelpCircleIcon, SearchIcon, CommandIcon, CircleQuestionMarkIcon, PowerServiceIcon, WorkIcon, UserIcon, ArtboardToolIcon, Cards02Icon, Building02Icon, ContactIcon, DocumentValidationIcon, UserGroupIcon } from "@hugeicons/core-free-icons"
 import Link from "next/link"
 
 const data = {
